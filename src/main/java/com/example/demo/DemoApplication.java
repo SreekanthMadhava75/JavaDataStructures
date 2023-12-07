@@ -18,6 +18,9 @@ public class DemoApplication {
 		sda.insert(4,120);
 
 		sda.traversalArray();
+		sda.searchInArray(23);
+		sda.deleteValueFromArray(4);
+		sda.searchInArray(120);
 
 	}
 
