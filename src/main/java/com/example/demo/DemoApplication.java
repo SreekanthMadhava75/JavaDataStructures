@@ -24,14 +24,17 @@ public class DemoApplication {
 
 		// TwoDimensional Array
 
-		TwoDimensionalArray tda = new TwoDimensionalArray(2,2);
-		tda.insertAvalue(1,1,20);
-		tda.insertAvalue(3,3,21);
+//		TwoDimensionalArray tda = new TwoDimensionalArray(2,2);
+//		tda.insertAvalue(1,1,20);
+//		tda.insertAvalue(3,3,21);
+//
+//		tda.accessCell(1,1);
+//		tda.searchValue(20);
+//		tda.deleteValuefromArray(2,2);
+//		tda.searchValue(21);
 
-		tda.accessCell(1,1);
-		tda.searchValue(20);
-		tda.deleteValuefromArray(2,2);
-		tda.searchValue(21);
+		AverageTemp at = new AverageTemp();
+		at.temp();
 	}
 
 
