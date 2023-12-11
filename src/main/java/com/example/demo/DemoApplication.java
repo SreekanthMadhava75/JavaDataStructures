@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.arrays.*;
+import com.example.demo.linkedlists.*;
 
 
 @SpringBootApplication
@@ -33,8 +34,35 @@ public class DemoApplication {
 //		tda.deleteValuefromArray(2,2);
 //		tda.searchValue(21);
 
-		AverageTemp at = new AverageTemp();
-		at.temp();
+//		AverageTemp at = new AverageTemp();
+//		at.temp();
+
+//		ArraysList al = new ArraysList();
+//		al.listLoop();
+
+//     singlelinkedlist
+
+		SingleLinkedLists singleLinkedLists = new SingleLinkedLists();
+		singleLinkedLists.createSingleLinkedList(5);
+		System.out.println(singleLinkedLists.head.value);
+		singleLinkedLists.insertInLinkedList(6, 1);
+		System.out.println(singleLinkedLists.head.next.value);
+		singleLinkedLists.insertInLinkedList(7, 3);
+		System.out.println(singleLinkedLists.head.next.next.value);
+
+		singleLinkedLists.insertInLinkedList(8, 4);
+		System.out.println(singleLinkedLists.head.next.next.next.value);
+
+		singleLinkedLists.insertInLinkedList(9, 3);
+		System.out.println(singleLinkedLists.head.next.next.next.value);
+
+		singleLinkedLists.traverseSinglyLinkedList();
+
+		singleLinkedLists.searchNode(6);
+		singleLinkedLists.deleteNode(3);
+		singleLinkedLists.traverseSinglyLinkedList();
+
+
 	}
 
 
