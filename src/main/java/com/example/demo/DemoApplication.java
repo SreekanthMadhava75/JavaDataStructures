@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.circularSingleLinkedList.CircularSinglyLinkedList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.arrays.*;
@@ -42,26 +43,37 @@ public class DemoApplication {
 
 //     singlelinkedlist
 
-		SingleLinkedLists singleLinkedLists = new SingleLinkedLists();
-		singleLinkedLists.createSingleLinkedList(5);
-		System.out.println(singleLinkedLists.head.value);
-		singleLinkedLists.insertInLinkedList(6, 1);
-		System.out.println(singleLinkedLists.head.next.value);
-		singleLinkedLists.insertInLinkedList(7, 3);
-		System.out.println(singleLinkedLists.head.next.next.value);
+//		SingleLinkedLists singleLinkedLists = new SingleLinkedLists();
+//		singleLinkedLists.createSingleLinkedList(5);
+//		System.out.println(singleLinkedLists.head.value);
+//		singleLinkedLists.insertInLinkedList(6, 1);
+//		System.out.println(singleLinkedLists.head.next.value);
+//		singleLinkedLists.insertInLinkedList(7, 3);
+//		System.out.println(singleLinkedLists.head.next.next.value);
+//
+//		singleLinkedLists.insertInLinkedList(8, 4);
+//		System.out.println(singleLinkedLists.head.next.next.next.value);
+//
+//		singleLinkedLists.insertInLinkedList(9, 3);
+//		System.out.println(singleLinkedLists.head.next.next.next.value);
+//
+//		singleLinkedLists.traverseSinglyLinkedList();
+//
+//		singleLinkedLists.searchNode(6);
+//		singleLinkedLists.deleteNode(3);
+//		singleLinkedLists.traverseSinglyLinkedList();
 
-		singleLinkedLists.insertInLinkedList(8, 4);
-		System.out.println(singleLinkedLists.head.next.next.next.value);
+		//CSLL
 
-		singleLinkedLists.insertInLinkedList(9, 3);
-		System.out.println(singleLinkedLists.head.next.next.next.value);
-
-		singleLinkedLists.traverseSinglyLinkedList();
-
-		singleLinkedLists.searchNode(6);
-		singleLinkedLists.deleteNode(3);
-		singleLinkedLists.traverseSinglyLinkedList();
-
+		CircularSinglyLinkedList circularSinglyLinkedList = new CircularSinglyLinkedList();
+		circularSinglyLinkedList.createCSLL(5);
+		//System.out.println(circularSinglyLinkedList.head.value);
+		circularSinglyLinkedList.insertCSLL(4, 0);
+		circularSinglyLinkedList.insertCSLL(6, 1);
+		circularSinglyLinkedList.insertCSLL(7, 8);
+		circularSinglyLinkedList.traverseCSLL();
+		circularSinglyLinkedList.deleteNode(6);
+		circularSinglyLinkedList.traverseCSLL();
 
 	}
 
