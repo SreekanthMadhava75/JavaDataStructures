@@ -1,6 +1,8 @@
 package com.example.demo;
 
+import com.example.demo.circularDoubleLinkedList.CircularDoublyLinkedList;
 import com.example.demo.circularSingleLinkedList.CircularSinglyLinkedList;
+import com.example.demo.doubleLinkedList.DoublyLinkedList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.arrays.*;
@@ -65,16 +67,37 @@ public class DemoApplication {
 
 		//CSLL
 
-		CircularSinglyLinkedList circularSinglyLinkedList = new CircularSinglyLinkedList();
-		circularSinglyLinkedList.createCSLL(5);
-		//System.out.println(circularSinglyLinkedList.head.value);
-		circularSinglyLinkedList.insertCSLL(4, 0);
-		circularSinglyLinkedList.insertCSLL(6, 1);
-		circularSinglyLinkedList.insertCSLL(7, 8);
-		circularSinglyLinkedList.traverseCSLL();
-		circularSinglyLinkedList.deleteNode(6);
-		circularSinglyLinkedList.traverseCSLL();
+//		CircularSinglyLinkedList circularSinglyLinkedList = new CircularSinglyLinkedList();
+//		circularSinglyLinkedList.createCSLL(5);
+//		//System.out.println(circularSinglyLinkedList.head.value);
+//		circularSinglyLinkedList.insertCSLL(4, 0);
+//		circularSinglyLinkedList.insertCSLL(6, 1);
+//		circularSinglyLinkedList.insertCSLL(7, 8);
+//		circularSinglyLinkedList.traverseCSLL();
+//		circularSinglyLinkedList.deleteNode(6);
+//		circularSinglyLinkedList.traverseCSLL();
 
+
+
+		//DLL
+
+//		DoublyLinkedList dll = new DoublyLinkedList();
+//		dll.createDLL(1);
+//		dll.insertDLL(2, 0);
+//		dll.insertDLL(3, 1);
+//		dll.insertDLL(4, 7);
+//		dll.traverseDLL();
+//		//dll.deleteDLL();
+//		dll.traverseDLL();
+
+		CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
+		cdll.createCDLL(1);
+		cdll.insertNode(2, 0);
+		cdll.insertNode(3, 2);
+		cdll.insertNode(4, 5);
+		cdll.traverseCDLL();
+		cdll.deleteCDLL();
+		cdll.traverseCDLL();
 	}
 
 
