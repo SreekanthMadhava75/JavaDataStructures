@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.circularDoubleLinkedList.CircularDoublyLinkedList;
 import com.example.demo.circularSingleLinkedList.CircularSinglyLinkedList;
 import com.example.demo.doubleLinkedList.DoublyLinkedList;
+import com.example.demo.stack.StackArray;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.arrays.*;
@@ -90,14 +91,26 @@ public class DemoApplication {
 //		//dll.deleteDLL();
 //		dll.traverseDLL();
 
-		CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
-		cdll.createCDLL(1);
-		cdll.insertNode(2, 0);
-		cdll.insertNode(3, 2);
-		cdll.insertNode(4, 5);
-		cdll.traverseCDLL();
-		cdll.deleteCDLL();
-		cdll.traverseCDLL();
+//		CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
+//		cdll.createCDLL(1);
+//		cdll.insertNode(2, 0);
+//		cdll.insertNode(3, 2);
+//		cdll.insertNode(4, 5);
+//		cdll.traverseCDLL();
+//		cdll.deleteCDLL();
+//		cdll.traverseCDLL();
+
+		//stackarr
+		StackArray stackArray = new StackArray(2);
+		stackArray.isEmpty();
+		stackArray.isFull();
+		stackArray.push(2);;
+		stackArray.push(3);
+		stackArray.push(4);
+		stackArray.isFull();
+		stackArray.peek();
+		stackArray.pop();
+		stackArray.deleteStack();
 	}
 
 
